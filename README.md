@@ -39,11 +39,10 @@ puis exécuter votre programme. La classe Article contient les mêmes données q
 des articles en base, à savoir : identifiant, description, brand, price
 (*) : Comment ajouter une librairie à un projet dans Eclipse une fois le bon JAR téléchargé,
 contenant donc les pilotes jdbc appropriés (copier-coller dans un rep lib par ex) :
-→ Sur la perspective « project explorer », clic droit sur le jar « add to build path »
+→ Sur la perspective « project explorer », clic droit sur le jar « add to build path ».
 
   • Exercice 3 : Nous souhaitons maintenant, toujours sous Eclipse, réaliser une requête
 d’insertion d’un article, une autre de mise à jour, une autre qui supprime un article et une
-FMS-EA © El Babili - Tous droits réservés 2
 dernière qui nous renvoi toutes les infos d’un article. Vous devez afficher tous vos articles
 sous Eclipse ou vérifier en ligne de commande que cela a fonctionné en base.
 
