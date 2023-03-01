@@ -37,13 +37,21 @@ public class TestJdbc {
 
 		// Connection de java.sql
 		try(Connection connection = DriverManager.getConnection(url, login, password)){
-			// Une fois connecté, réalisation d'une requête	
-			String strSql = "SELECT * FROM T_Articles";
+			
+		// Une fois connecté, réalisation d'une requête	
+		String strSql = "SELECT * FROM T_Articles";
+		//String strSql = "INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Laptop_Portable', 'DELL', 1380)";
+		//String strSql = "UPDATE t_articles SET description ='Joystick', brand='Nintendo', UnitaryPrice='135' WHERE IdArticle=1";
+	    //String strSql = "DELETE FROM t_articles WHERE IdArticle=15";
+		//String strSql = "SELECT idarticle,t_articles.description,brand,unitaryprice,"
+				//+ "catname FROM t_articles INNER JOIN t_categories WHERE"
+				//+ " t_articles.idcategory = t_categories.idcategory and idarticle=1";
+			
 			try(Statement statement = connection.createStatement()){
 				// ResultSet de java.sql
 				try(ResultSet resultSet = statement.executeQuery(strSql)){
 					while(resultSet.next()) {
-						// Index (de 1 à n) de la collonne, soit le nom de la colonne
+						// Index (de 1 à n) de la colonne, soit le nom de la colonne
 						int rsIdUser = resultSet.getInt(1);
 						String rsDescription = resultSet.getString(2);
 						String rsBrand = resultSet.getString(3);
@@ -62,7 +70,13 @@ public class TestJdbc {
 		}
 
 	}
-}
+}	
+
+
+
+
+
+
 
 
 

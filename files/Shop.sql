@@ -54,11 +54,11 @@ SELECT * FROM T_Articles;
 
  
 -- exo 1.4 ------------------
- INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Ecran', 'DELL', 380);
+ INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Ecran', 'DELL', 380.45);
 
  
 -- exo 1.5 ------------------
-UPDATE t_articles SET description ='Joystick', brand='Nintendo', UnitaryPrice='135' WHERE IdArticle=1;
+UPDATE t_articles SET description ='Joystick', brand='Nintendo', UnitaryPrice='135.65' WHERE IdArticle=1;
 
 
 -- exo 1.6 -------------------------------
