@@ -60,3 +60,4 @@ informations nécessaires comme ici :
 Dans un premier temps, il faudra le créer/générer à l’aide d’une classe CreateConfigFile
 puis dans un second temps l’utiliser pour exploiter votre base de données, vérifier que le
 tout fonctionne parfaitement. Pour vous aider, voir l’exemple ici.
+https://www.tutorialspoint.com/how-to-read-the-data-from-a-properties-file-in-java
