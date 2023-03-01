@@ -39,17 +39,20 @@ public class TestJdbc {
 		try(Connection connection = DriverManager.getConnection(url, login, password)){
 			
 		// Une fois connecté, réalisation d'une requête	
-		String strSql = "SELECT * FROM T_Articles";
-		//String strSql = "INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Laptop_Portable', 'DELL', 1380)";
-		//String strSql = "UPDATE t_articles SET description ='Joystick', brand='Nintendo', UnitaryPrice='135' WHERE IdArticle=1";
-	    //String strSql = "DELETE FROM t_articles WHERE IdArticle=15";
-		//String strSql = "SELECT idarticle,t_articles.description,brand,unitaryprice,"
-				//+ "catname FROM t_articles INNER JOIN t_categories WHERE"
-				//+ " t_articles.idcategory = t_categories.idcategory and idarticle=1";
-			
+		//String strSql = "SELECT * FROM T_Articles";
+		
+		/*  Exercice 3 */
+		//String strSql1 = "INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Laptop_Portable', 'DELL', 1380)";
+		//String strSql2 = "UPDATE t_articles SET description ='Disque Dur', brand='HP', UnitaryPrice='155' WHERE IdArticle=1";
+	   //String strSql3 = "DELETE FROM t_articles WHERE IdArticle=15";
+		String strSql4 = "SELECT idarticle,t_articles.description,brand,unitaryprice,"
+				+ "catname FROM t_articles INNER JOIN t_categories WHERE"
+				+ " t_articles.idcategory = t_categories.idcategory and idarticle=1";
+	   /*  Exercice 3 */
+		
 			try(Statement statement = connection.createStatement()){
 				// ResultSet de java.sql
-				try(ResultSet resultSet = statement.executeQuery(strSql)){
+				try(ResultSet resultSet = statement.executeQuery(strSql4)){
 					while(resultSet.next()) {
 						// Index (de 1 à n) de la colonne, soit le nom de la colonne
 						int rsIdUser = resultSet.getInt(1);
@@ -62,8 +65,8 @@ public class TestJdbc {
 			}
 
 			for(Article a : articles) 
-				System.out.println(a.getId() + " - " + a.getRsDescription() + " - " + a.getRsBrand() + " - " 
-						+ a.getRsPrice());
+				System.out.println(a.getId() + " - " + a.getDescription() + " - " + a.getBrand() + " - " 
+						+ a.getPrice());
 		}
 		catch(SQLException e) {
 			e.printStackTrace();

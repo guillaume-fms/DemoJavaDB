@@ -15,56 +15,51 @@ package fr.fms.jdbc;
 public class Article {
 
 	// declarations des attributs
-	 private int rsIdUser; 
-	 private String rsDescription;
-	 private String rsBrand;
-	 private double rsPrice;
+	 private int Id; 
+	 private String Description;
+	 private String Brand;
+	 private double Price;
 	 
 	 
 	 // Constructeur
-	 
-	 public Article(int rsIdUser, String rsDescription, String rsBrand, double rsPrice) {
+	 public Article(int Id, String Description, String Brand, double Price) {
 			super();
-			this.rsIdUser = rsIdUser;
-			this.rsDescription = rsDescription;
-			this.rsBrand = rsBrand;
-			this.rsPrice = rsPrice;
+			this.Id = Id;
+			this.Description = Description;
+			this.Brand = Brand;
+			this.Price = Price;
 		}
 	 
-	// Getters et Setters
-	 
-	public int getRsIdUser() {
-			return rsIdUser;
+	// Getters et Setters	 
+	public int getId() {
+			return Id;
 		}
 
-	public void setRsIdUser(int rsIdUser) {
-			this.rsIdUser = rsIdUser;
+	public void setId(int Id) {
+			this.Id = Id;
 		}
 	 
-	public String getRsDescription() {
-		return rsDescription;
+	public String getDescription() {
+		return Description;
 	}
 	
-	public void setRsDescription(String rsDescription) {
-		this.rsDescription = rsDescription;
+	public void setDescription(String Description) {
+		this.Description = Description;
 	}
-	public String getRsBrand() {
-		return rsBrand;
+	public String getBrand() {
+		return Brand;
 	}
-	public void setRsBrand(String rsBrand) {
-		this.rsBrand = rsBrand;
+	public void setBrand(String Brand) {
+		this.Brand = Brand;
 	}
-	public double getRsPrice() {
-		return rsPrice;
+	public double getPrice() {
+		return Price;
 	}
-	public void setRsPrice(double rsPrice) {
-		this.rsPrice = rsPrice;
+	public void setPrice(double Price) {
+		this.Price = Price;
 	}
 
-	public int getId() {
-		// TODO Auto-generated method stub
-		return rsIdUser;
-	}
+	
 	
 	
 }
