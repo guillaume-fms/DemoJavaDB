@@ -51,10 +51,12 @@ contenant toutes les informations de connexion. En effet, afin de rendre notre a
 ouverte aux évolutions notamment lorsqu’il s’agit de migrer d’un SGBD à un autre sans
 avoir à toucher au code source, un fichier de configuration contiendra toutes les
 informations nécessaires comme ici :
+
                 db.driver.class = org.mariadb.jdbc.Driver
                 db.url = jdbc:mariadb://localhost:3306/Shop
                 db.login = le votre
                 db.password = le vôtre
+                
 Dans un premier temps, il faudra le créer/générer à l’aide d’une classe CreateConfigFile
 puis dans un second temps l’utiliser pour exploiter votre base de données, vérifier que le
 tout fonctionne parfaitement. Pour vous aider, voir l’exemple ici.
