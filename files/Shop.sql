@@ -40,6 +40,8 @@ INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Webcam', 'Log
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('S10', 'Samsung', 2000);
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Macbook', 'Apple', 2000);
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Iphone50', 'Apple', 20 000);
+INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('PC_Laptot', 'DELL', 1380.55);
+INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('PC', 'Hewlett Packard', 2380.45);
 
 SELECT * FROM T_Articles;
 
@@ -54,9 +56,8 @@ SELECT * FROM T_Articles;
 
  
 -- exo 1.4 ------------------
- INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Ecran', 'DELL', 380.45);
+INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Ecran', 'DELL', 380.45);
 
- 
 -- exo 1.5 ------------------
 UPDATE t_articles SET description ='Joystick', brand='Nintendo', UnitaryPrice='135.65' WHERE IdArticle=1;
 
@@ -88,7 +89,7 @@ SELECT * FROM t_articles ORDER BY brand;
 -- exo 1.12 ------------------
 CREATE TABLE T_Categories (
 	 IdCategory          int(4)      PRIMARY KEY AUTO_INCREMENT,
-	 CatName             varchar(50) NOT NULL,
+	 CatName             varchar(100) NOT NULL,
 	 Description         varchar(100) NOT NULL
 ) ENGINE = InnoDB;
 

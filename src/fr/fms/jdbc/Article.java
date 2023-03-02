@@ -32,11 +32,11 @@ public class Article {
 	 
 	// Getters et Setters	 
 	public int getId() {
-			return Id;
+		return Id;
 		}
 
 	public void setId(int Id) {
-			this.Id = Id;
+		this.Id = Id;
 		}
 	 
 	public String getDescription() {
