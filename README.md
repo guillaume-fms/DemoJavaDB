@@ -61,3 +61,18 @@ Dans un premier temps, il faudra le créer/générer à l’aide d’une classe 
 puis dans un second temps l’utiliser pour exploiter votre base de données, vérifier que le
 tout fonctionne parfaitement. Pour vous aider, voir l’exemple ici.
 https://www.tutorialspoint.com/how-to-read-the-data-from-a-properties-file-in-java
+
+  • Exercice 5 : LE CODE DEVIENT ILLISIBLE, N’EST-CE PAS ?
+  
+Reprenons donc nos bonnes habitudes et découpons notre appli à l’aide des packages :
+
+  - 5.1 Ajouter le package fr.fms.entities et ajoutez-y la classe Article
+  
+  - 5.2 Ajouter le package fr.fms.dao qui va faire le lien entre notre application et la base de
+données, ajoutez-y l’interface générique Dao (ci-dessous) contenant les méthodes dites
+CRUD pour Create, Read, Update et Delete, puis ajouter la classe ArticleDao qui
+implémente l’interface générique Dao : public class ArticleDao implements Dao<Article>
+{...}
+
+  - 5.3 Capturer et relayer les exceptions avec des messages explicites (Privilégier le try with
+ressources). Puis dans votre programme principal tester votre implémentation ArticleDao.
