@@ -80,7 +80,7 @@ ressources). Puis dans votre programme principal tester votre implémentation Ar
   • Exercice 6 : Allons plus loin en permettant uniquement aux utilisateurs en base d’avoir
 accès à notre boutique. Pour ce faire, vous devez ajouter une classe Utilisateur et son
 homologue en base dont voici le contenu :
-  
+
     CREATE TABLE T_Users (
     IdUser int(4) PRIMARY KEY AUTO_INCREMENT,
     Login varchar(20) NOT NULL,
