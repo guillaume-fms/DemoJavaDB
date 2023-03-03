@@ -40,8 +40,8 @@ INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Webcam', 'Log
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('S10', 'Samsung', 2000);
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Macbook', 'Apple', 2000);
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Iphone50', 'Apple', 20 000);
-INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('PC_Laptot', 'DELL', 1380.55);
-INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('PC', 'Hewlett Packard', 2380.45);
+INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES ('PC_Laptot', 'DELL', 1380.55);
+INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES ('PC', 'Hewlett Packard', 2380.45);
 
 SELECT * FROM T_Articles;
 
@@ -96,7 +96,9 @@ CREATE TABLE T_Categories (
 INSERT INTO T_Categories (IdCategory, CatName, Description) VALUES (1, 'PC', 'ordinateur portable ou pas');
 INSERT INTO T_Categories (IdCategory, CatName, Description) VALUES (2, 'Smartphone', 'téléphone avec écran tactile + applis');
 INSERT INTO T_Categories (IdCategory, CatName, Description) VALUES (3, 'Materiel info', 'materiel informatique physique en lien avec un ordinateur');
-
+INSERT INTO T_Categories (IdCategory, CatName, Description) VALUES (4, 'Smartphone', 'téléphone avec écran pliable');
+INSERT INTO T_Categories (IdCategory, CatName, Description) VALUES (5, 'Materiel info', 'clavier sans fil');
+INSERT INTO T_Categories (IdCategory, CatName, Description) VALUES (6, 'PC', 'ordinateur gaming, tour transparente et joystick');
 
 SELECT * FROM T_Categories;
 
@@ -136,5 +138,8 @@ INSERT INTO T_Users (IdUser, Login, Password) VALUES (2, 'Macron', 'Manu');
 INSERT INTO T_Users (IdUser, Login, Password) VALUES (3, 'Skywalker', 'Luke');
 INSERT INTO T_Users (IdUser, Login, Password) VALUES (4, 'Ripley', 'Ellen');
 INSERT INTO T_Users (IdUser, Login, Password) VALUES (5, 'Biden', 'Joe');
+INSERT INTO T_Users (IdUser, Login, Password) VALUES (6, 'fms2023', 'Guillaume');
+INSERT INTO T_Users (IdUser, Login, Password) VALUES (7, 'Jean', 'Robert');
+INSERT INTO T_Users (IdUser, Login, Password) VALUES (8, 'Borne', 'Elizabeth');
 
 SELECT * FROM T_Users;
