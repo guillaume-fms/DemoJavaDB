@@ -8,6 +8,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import fr.fms.entities.Article;
+
 /*
  *@author GuillaumePastor
  *@since Mardi 28/02/20230 à Vendredi 3/03/2023 

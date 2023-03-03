@@ -10,7 +10,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Properties;
-import fr.fms.jdbc.Article;
+
+import fr.fms.entities.Article;
 
 /*
  *@author GuillaumePastor

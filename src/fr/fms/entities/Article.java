@@ -1,4 +1,4 @@
-package fr.fms.jdbc;
+package fr.fms.entities;
 
 
 /*
@@ -32,11 +32,7 @@ public class Article {
 	 
 	// Getters et Setters	 
 	public int getId() {
-<<<<<<< HEAD
-		return Id;
-=======
-	        return Id;
->>>>>>> eb2f347f4a8c20dcb0020900605525c0b2787bb1
+		return Id;    
 		}
 
 	public void setId(int Id) {
