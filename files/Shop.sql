@@ -39,7 +39,7 @@ INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Casque Audio'
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Webcam', 'Logitoch', 755);
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('S10', 'Samsung', 2000);
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Macbook', 'Apple', 2000);
-INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Iphone50', 'Apple', 20 000);
+INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Iphone50', 'Apple', 20000);
 INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES ('PC_Laptot', 'DELL', 1380.55);
 INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES ('PC', 'Hewlett Packard', 2380.45);
 
