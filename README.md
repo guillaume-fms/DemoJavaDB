@@ -76,3 +76,21 @@ implémente l’interface générique Dao : public class ArticleDao implements D
 
   - 5.3 Capturer et relayer les exceptions avec des messages explicites (Privilégier le try with
 ressources). Puis dans votre programme principal tester votre implémentation ArticleDao.
+
+  • Exercice 6 : Allons plus loin en permettant uniquement aux utilisateurs en base d’avoir
+accès à notre boutique. Pour ce faire, vous devez ajouter une classe Utilisateur et son
+homologue en base dont voici le contenu :
+
+    CREATE TABLE T_Users (
+    IdUser int(4) PRIMARY KEY AUTO_INCREMENT,
+    Login varchar(20) NOT NULL,
+    Password varchar(20) NOT NULL,
+    ) ENGINE = InnoDB;
+
+  • Exercice 7 : Effectuer des insertions d’utilisateurs, vous pouvez modifier le script Shop.sql
+par exemple et le regénérer mais attention aux doublons !
+
+  • Exercice 8 : « Plus haut », côté Eclipse, tout comme pour la classe Article, vous devez
+ajouter une classe User qui contient les attributs correspondants. Puis dans le package dao,
+rajouter la classe UserDao qui implémente aussi Dao, tester les méthodes Create, Read,
+Update, Delete.
