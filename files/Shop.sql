@@ -42,6 +42,8 @@ INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Macbook', 'Ap
 INSERT INTO T_Articles (Description, Brand, UnitaryPrice) VALUES ('Iphone50', 'Apple', 20000);
 INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES ('PC_Laptot', 'DELL', 1380.55);
 INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES ('PC', 'Hewlett Packard', 2380.45);
+INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Imprimante', 'Epson', 95);
+
 
 SELECT * FROM T_Articles;
 
@@ -57,6 +59,7 @@ SELECT * FROM T_Articles;
  
 -- exo 1.4 ------------------
 INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Ecran', 'DELL', 380.45);
+INSERT INTO t_articles (Description, Brand, UnitaryPrice) VALUES('Imprimante', 'Epson', 95);
 
 -- exo 1.5 ------------------
 UPDATE t_articles SET description ='Joystick', brand='Nintendo', UnitaryPrice='135.65' WHERE IdArticle=1;

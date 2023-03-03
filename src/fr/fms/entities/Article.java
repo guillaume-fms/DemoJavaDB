@@ -59,6 +59,16 @@ public class Article {
 		this.Price = Price;
 	}
 
+	public int getLogin() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getPassword() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	
 	
 	

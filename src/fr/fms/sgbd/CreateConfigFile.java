@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import fr.fms.entities.Article;
+import fr.fms.entities.User;
 
 /*
  *@author GuillaumePastor
@@ -30,6 +31,7 @@ public class CreateConfigFile {
 
 	public static void main(String[] args) throws IOException {
 		ArrayList<Article> articles = new ArrayList<Article>();
+		ArrayList<User> users = new ArrayList<User>();
 		Properties prop = readPropertiesFile("files/conf.properties");
 		String login = prop.getProperty("db.login");
 		String password = prop.getProperty("db.password");
@@ -48,24 +50,33 @@ public class CreateConfigFile {
 		// Connection de java.sql
 		try(Connection connection = DriverManager.getConnection(url, login, password)){			
 			// Une fois connecté, réalisation d'une requête	
-			String strSql = "SELECT * FROM T_Articles";
+			String strSql = "SELECT * FROM T_Users";
+			//String strSql1 = "INSERT INTO t_users (IdUser, Login, Password) VALUES(10,'Johnson', 'Boris')";
 			try(Statement statement = connection.createStatement()){
 				// ResultSet de java.sql
 				try(ResultSet resultSet = statement.executeQuery(strSql)){
 					while(resultSet.next()) {
 						// Index (de 1 à n) de la colonne, soit le nom de la colonne
-						int rsIdUser = resultSet.getInt(1);
-						String rsDescription = resultSet.getString(2);
-						String rsBrand = resultSet.getString(3);
-						double rsPrice = resultSet.getDouble(4);
-						articles.add((new Article(rsIdUser, rsDescription, rsBrand, rsPrice)));
+						//int rsIdUser = resultSet.getInt(1);
+						//String rsDescription = resultSet.getString(2);
+						//String rsBrand = resultSet.getString(3);
+						//double rsPrice = resultSet.getDouble(4);
+						//articles.add((new Article(rsIdUser, rsDescription, rsBrand, rsPrice)));
+						int rsId = resultSet.getInt(1);
+						String rsLogin = resultSet.getString(2);
+						String rsPassword = resultSet.getString(3);
+						users.add((new User(rsId, rsLogin, rsPassword)));
 					}
 				}	
 			}
-
-			for(Article a : articles) 
-				System.out.println(a.getId() + " - " + a.getDescription() + " - " + a.getBrand() + " - " 
-						+ a.getPrice());
+				// Affichage de tous les articles
+			//for(Article a : articles) 
+			//	System.out.println(a.getId() + " - " + a.getDescription() + " - " + a.getBrand() + " - " 
+			//			+ a.getPrice());
+			
+			// Affichage de tous les users
+			for(User u : users) 
+				System.out.println(u.getId() + " - " + u.getLogin() + " - " + u.getPassword());
 		}
 		catch(SQLException e) {
 			e.printStackTrace();
