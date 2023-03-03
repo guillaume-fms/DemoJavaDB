@@ -111,3 +111,7 @@ permettre l’accès à une personne(vous) uniquement sur la base de données Sh
 • Exercice 12 : Enfin, d’après vous, quelles seraient les méthodes d’une interface
 représentant la couche métier de notre appli de E-commerce ici consistant à choisir dans
 une liste d’articles ceux que je souhaite ajouter à mon panier, supprimer, afficher...
+  
+• Exercice 13 : Implémenter votre interface puis réaliser une application permettant l’achat
+d’articles dans une boutique en remplissant un panier avec la possibilité de passer
+commande à tout instant...
