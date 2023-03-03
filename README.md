@@ -46,7 +46,7 @@ d’insertion d’un article, une autre de mise à jour, une autre qui supprime 
 dernière qui nous renvoi toutes les infos d’un article. Vous devez afficher tous vos articles
 sous Eclipse ou vérifier en ligne de commande que cela a fonctionné en base.
 
-• Exercice 4 : Nous souhaitons dorénavant utiliser un fichier de configuration unique
+  • Exercice 4 : Nous souhaitons dorénavant utiliser un fichier de configuration unique
 contenant toutes les informations de connexion. En effet, afin de rendre notre application
 ouverte aux évolutions notamment lorsqu’il s’agit de migrer d’un SGBD à un autre sans
 avoir à toucher au code source, un fichier de configuration contiendra toutes les
@@ -94,3 +94,24 @@ par exemple et le regénérer mais attention aux doublons !
 ajouter une classe User qui contient les attributs correspondants. Puis dans le package dao,
 rajouter la classe UserDao qui implémente aussi Dao, tester les méthodes Create, Read,
 Update, Delete.
+
+• Exercice 9 : Vous devez mettre en œuvre le pattern singleton afin d’ouvrir une seule
+connexion pour tous les composants d’accès aux données (ArticleDao, UserDao...), il faudra
+étudier comment fonctionne ce pattern avant de le mettre en œuvre ici. Voir un exemple
+ici.
+
+• Exercice 10 : Trouver un moyen pour permettre dorénavant aux seuls utilisateurs en base
+de consulter la liste des articles. En effet, votre application propose de saisir login et
+password pour vérifier si vous avez accès, si c’est le cas, l’utilisateur pourra visualiser la
+liste des articles.
+
+• Exercice 11 : Vous étiez root jusqu’ici sur votre SGBD donc admin aussi faites en sorte de
+permettre l’accès à une personne(vous) uniquement sur la base de données Shop.
+
+• Exercice 12 : Enfin, d’après vous, quelles seraient les méthodes d’une interface
+représentant la couche métier de notre appli de E-commerce ici consistant à choisir dans
+une liste d’articles ceux que je souhaite ajouter à mon panier, supprimer, afficher...
+  
+• Exercice 13 : Implémenter votre interface puis réaliser une application permettant l’achat
+d’articles dans une boutique en remplissant un panier avec la possibilité de passer
+commande à tout instant...
