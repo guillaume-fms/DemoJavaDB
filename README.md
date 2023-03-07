@@ -60,7 +60,6 @@ informations nécessaires comme ici :
 Dans un premier temps, il faudra le créer/générer à l’aide d’une classe CreateConfigFile
 puis dans un second temps l’utiliser pour exploiter votre base de données, vérifier que le
 tout fonctionne parfaitement. Pour vous aider, voir l’exemple ici.
-
 https://www.tutorialspoint.com/how-to-read-the-data-from-a-properties-file-in-java
 
   • Exercice 5 : LE CODE DEVIENT ILLISIBLE, N’EST-CE PAS ?
@@ -129,11 +128,13 @@ commande à tout instant...
   
   • Modéliser le transfert d'une commande en base puis le mettre en œuvre
   
-  https://zestedesavoir.com/tutoriels/646/apprenez-a-programmer-en-java/559_interactions-avec-les-bases-de-donnees/2725_lier-ses-tables-avec-des-objets-java-le-pattern-dao/#3-8712_le-pattern-factory
   
-  
-  ![image](https://user-images.githubusercontent.com/90391689/223406761-bac950e6-e585-41d6-8248-7ded676a2662.png)
+  ![image](https://user-images.githubusercontent.com/90391689/223407001-c39b21d2-f0ef-4376-bc85-a3b8b8d978b6.png)
 
+  
+  
+  
+  https://zestedesavoir.com/tutoriels/646/apprenez-a-programmer-en-java/559_interactions-avec-les-bases-de-donnees/2725_lier-ses-tables-avec-des-objets-java-le-pattern-dao/#3-8712_le-pattern-factory
   
   **********************************************************************************************************************************************
   
