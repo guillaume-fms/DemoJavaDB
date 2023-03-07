@@ -128,6 +128,8 @@ commande à tout instant...
   
   • Modéliser le transfert d'une commande en base puis le mettre en œuvre
   
+  https://zestedesavoir.com/tutoriels/646/apprenez-a-programmer-en-java/559_interactions-avec-les-bases-de-donnees/2725_lier-ses-tables-avec-des-objets-java-le-pattern-dao/#3-8712_le-pattern-factory
+  
   **********************************************************************************************************************************************
   
   Bonus sur les requêtes Sql : https://sql.sh/exercices-sql
