@@ -127,4 +127,8 @@ commande à tout instant...
   • Gestion de la commande une fois validé doit être en mémoire dans un premier temps.
   
   • Modéliser le transfert d'une commande en base puis le mettre en œuvre
+  
+  **********************************************************************************************************************************************
+  
+  Bonus sur les requêtes Sql : https://sql.sh/exercices-sql
 
