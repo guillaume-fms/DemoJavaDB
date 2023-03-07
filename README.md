@@ -120,7 +120,6 @@ commande à tout instant...
   • Ajouter le pattern factory afin d'anticiper sur l'évolution de notre application
   • Afficher les catégories au niveau application
   • Afficher les articles par catégorie avec possibilité d'ajout au caddy à tout instant
-  • Gestion de la commande une fois validé doit être en mémoire dans un premier
-  temps.
+  • Gestion de la commande une fois validé doit être en mémoire dans un premier temps.
   • Modéliser le transfert d'une commande en base puis le mettre en œuvre
 
